@@ -200,7 +200,8 @@ overflow: hidden;
 }
 .product-thumb img{
   height: 350px;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
 }
 .product-name h2{
   font-size: 18px;
@@ -233,16 +234,66 @@ overflow: hidden;
   left: 20px;
   display: flex;
   align-items: flex-start;
-
 }
 .product-single-item{
-  position: relative;
+  position: relative !important;
+  transition: opacity 0.4s ease-out;
+  padding: 0px 15px 30px;
 }
-.product-overlay-top-right{
+.product-single-item:hover .second-image{
+opacity: 1;
+z-index: 0;
+}
+.product-thumb .second-image{
   position: absolute;
-  top: 17px;
-  right: 70px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.4s ease-out;
 }
-.product-overlay-top-right a{
+.product-single-item .heart-button{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.product-single-item .group-button{
+  position: absolute;
+  bottom: 120px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: .42s ease;
+  
+}
+.group-button a{
+  position: relative;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  
+}
+.group-button a:hover{
+  background-color: #d93939;
+  color: #fff;
+}
+.heart-button a{
   font-size: 25px;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 9px;
+}
+.product-single-item:hover  .group-button{
+transform: translateY(1px);
+transition: .42s ease;
+opacity: 1;
 }
