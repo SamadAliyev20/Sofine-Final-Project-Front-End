@@ -95,6 +95,35 @@
     right: 0;
     transform: translate(-5px,-5px);
   }
+  @media (max-width: 1024px) {
+    header {
+      display: none;
+    }
+  }
+  .container-mobile{
+    padding: 0px 15px;
+  }
+  .mobile-header{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+  }
+  .mobile-basket a{
+   font-size: 25px;
+   position: relative;
+   color: #1a1a1a;
+  }
+  .mobile-basket .count{
+    position: absolute;
+    left: 25px;
+    top: 20px;
+  }
+  .hamburger-menu button{
+    border: none;
+    background-color: #fff;
+    font-size: 25px;
+  }
   .single-slider{
     position: relative;
   }
@@ -408,4 +437,51 @@ transition: .70s ease;
 }
 .slick-prev::before{
   color: #bebebe;
+}
+.category-single-item .category-arrow{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 30px;
+  background-color: white;
+  border-radius: 100%;
+  bottom: 10px;
+  transition: .42s ease;
+  opacity: 0;
+  cursor: pointer;
+}
+.category-arrow a{
+ border: none;
+ color: #1a1a1a;  
+}
+.category-arrow:hover a{
+  color: #d93939;
+}
+.category-single-item:hover .category-arrow
+{
+opacity: 1;
+}
+.Brands-Section{
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 40px;
+  padding-left: 0;
+  background-color: #ffffff;
+  color: #666666;
+  padding: 40px 0px;
+}
+.brand-img img{
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+}
+.single-brand-item{
+ margin: 0 10px;
+ display: flex;
+ justify-content: space-between;
+ justify-content: center;
+ align-items: center;
 }
