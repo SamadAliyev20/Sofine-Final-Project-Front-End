@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.hero-slider').slick({
       dots: true,
       infinite: false,
+      arrows:false,
       speed: 600,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -37,6 +38,7 @@ $(document).ready(function(){
     $('.product-slider').slick({
       infinite: false,
       speed: 600,
+      arrows:false,
       slidesToShow: 5,
       slidesToScroll: 1,
       swipe: true,
@@ -95,5 +97,49 @@ $(document).ready(function(){
         }
       ]
     });
-    
+    $('.category-carousel').slick({
+      infinite: false,
+      speed: 600,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      swipe: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            arrows: false,
+          }
+        },
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: false,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+            slidesToScroll: 1,
+            swipe: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
+            slidesToScroll: 1,
+            swipe: true
+          }
+        }
+      ]
+    });
   });

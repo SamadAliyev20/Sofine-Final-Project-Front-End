@@ -297,3 +297,115 @@ transform: translateY(1px);
 transition: .42s ease;
 opacity: 1;
 }
+#Category-Section{
+     margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-right: 0;
+    padding-bottom: 100px;
+    padding-left: 0;
+    background-color: #fafafa;
+}
+.wrap-title{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 10px;
+}
+.wrap-title .category-description{
+  padding: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.category-link a{
+  border: 1px solid black;
+    line-height: 45px;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    min-width: 160px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: black;
+    transition: .42s ease;
+}
+.category-link a:hover{
+  color: #d93939;
+}
+.category-single-item{
+  width: 100%;
+  position: relative;
+  padding: 0 15px;
+
+}
+.category-text{
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: black;
+ 
+}
+.category-text .category-count{
+  position: absolute;
+  top: -15px;
+  left: 145px;
+  cursor: pointer;
+}
+.category-text a{
+  color: #1a1a1a;
+}
+.category-img img{
+width: 100%;
+object-fit: cover;
+transition: .70s ease;
+
+}
+.category-img{
+  overflow: hidden;
+}
+.category-carousel{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:576px) {
+  .category-carousel{
+    justify-content: center;
+  }
+}
+.category-img img:hover{
+  transform: scale(1.1);
+}
+.slick-prev,.slick-next{
+  background: #ffffff;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+}
+.slick-prev{
+  z-index: 9;
+  color: #1a1a1a;
+}
+.slick-next::before{
+  color: #bebebe;
+}
+.slick-prev::before{
+  color: #bebebe;
+}
