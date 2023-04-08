@@ -188,4 +188,12 @@ $(document).ready(function(){
         }
       ]
     });
+    $('.hamburger-btn').on('click', function(){
+     $('.mobile-menu-content-box').toggleClass('active')
+     $('.mask_opened').toggleClass('active')
+    });
+    $('.mobile-close-btn').on('click', function(){
+      $('.mobile-menu-content-box').toggleClass('active');
+      $('.mask_opened').toggleClass('active')
+     });
   });
