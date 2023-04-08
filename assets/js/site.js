@@ -196,4 +196,25 @@ $(document).ready(function(){
       $('.mobile-menu-content-box').toggleClass('active');
       $('.mask_opened').toggleClass('active')
      });
+     ///cart-open-close-section///
+     $('.minicart-btn').on('click',function(){
+      $('.mini-cart-box').toggleClass('active');
+      $('.mask_opened').toggleClass('active')
+     });
+     $('.cart-close-btn').on('click',function(){
+      $('.mini-cart-box').toggleClass('active');
+      $('.mask_opened').toggleClass('active')
+     });
+     ///cart-open-close-section///
+     ///wishlist-open-close-section///
+     $('.miniwishlist-btn').on('click',function(){
+      $('.wishlist-box').toggleClass('active');
+      $('.mask_opened').toggleClass('active')
+     });
+     $('.wislist-close-btn').on('click',function(){
+      $('.wishlist-box').toggleClass('active');
+      $('.mask_opened').toggleClass('active')
+     });
+     ///wishlist-open-close-section///
+     
   });
