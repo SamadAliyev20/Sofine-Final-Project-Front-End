@@ -229,17 +229,17 @@ header {
     max-width: 1650px;
   }
 }
-
 #banner {
   margin-bottom: 2rem;
 }
 
-.banner-img {
+.banner-img img{
   width: 100%;
   transition: .42s ease;
+  overflow: hidden;
 }
 
-.banner-img:hover {
+.banner-img img:hover{
   transform: scale(1.1);
 }
 
@@ -254,6 +254,7 @@ header {
   .laber-banner {
     margin-bottom: 20px;
   }
+  
 }
 
 .product-thumb img {
@@ -304,13 +305,14 @@ header {
   position: relative !important;
   transition: opacity 0.4s ease-out;
   padding: 0px 15px 30px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .product-single-item:hover .second-image {
   opacity: 1;
   z-index: 0;
 }
-
 .product-thumb .second-image {
   position: absolute;
   opacity: 0;
@@ -366,7 +368,7 @@ header {
 }
 
 .product-single-item:hover .group-button {
-  transform: translateY(1px);
+  transform: translateY(-8px);
   transition: .42s ease;
   opacity: 1;
 }
@@ -473,6 +475,9 @@ header {
   .category-carousel {
     justify-content: center;
   }
+}
+@media (max-width:991px) {
+
 }
 
 .category-img img:hover {
@@ -601,7 +606,6 @@ header {
   min-width: 130px;
   cursor: pointer;
 }
-
 .social-icons {
   display: inline-flex;
   gap: 20px;
@@ -615,7 +619,6 @@ header {
   margin: 0;
   padding: 0;
 }
-
 .mobile-menu-content-box {
   position: fixed;
   top: 0;
@@ -628,7 +631,6 @@ header {
   padding: 30px;
   transition: all ease .70s;
 }
-
 .mobile-menu-content-box.active {
   left: 0;
 }
@@ -820,4 +822,44 @@ right: 0;
 }
 .wislist-close-btn{
   cursor: pointer;
+}
+.search-content-box{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 9999 !important;
+  top: 0;
+  left: -100%;
+  visibility: hidden;
+  padding: 30px;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  transition: all ease .70s;
+}
+.search-content-box.active{
+  visibility: visible;
+  left: 0;
+}
+.search-inner{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ position: absolute;
+ top: 20%;
+}
+.search-close-btn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.search-main-box{
+  width: 100%;
+  border: 1px solid gray;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 10px;
 }

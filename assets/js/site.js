@@ -206,7 +206,7 @@ $(document).ready(function(){
       $('.mask_opened').toggleClass('active')
      });
      ///cart-open-close-section///
-     ///wishlist-open-close-section///
+     ///Wishlist-open-close-section///
      $('.miniwishlist-btn').on('click',function(){
       $('.wishlist-box').toggleClass('active');
       $('.mask_opened').toggleClass('active')
@@ -215,6 +215,14 @@ $(document).ready(function(){
       $('.wishlist-box').toggleClass('active');
       $('.mask_opened').toggleClass('active')
      });
-     ///wishlist-open-close-section///
-     
+     ///Wishlist-open-close-section///
+     ///Search-open-close-section///
+     $('.search-btn').on('click',function(){
+      $('.search-content-box').toggleClass('active');
+     });
+     $('.search-close-btn').on('click',function(){
+      $('.search-content-box').toggleClass('active');
+     });
+     ///Search-open-close-section///
+
   });
