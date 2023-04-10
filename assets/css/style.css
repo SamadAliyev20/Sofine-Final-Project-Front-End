@@ -314,7 +314,12 @@ header {
   opacity: 1;
   z-index: 0;
 }
-
+.product-thumb {
+  position: relative;
+}
+.product-thumb .second-image {
+  width: 100%;
+}
 .product-thumb .second-image {
   position: absolute;
   opacity: 0;
@@ -333,7 +338,7 @@ header {
 .product-single-item .group-button {
   position: absolute;
   bottom: 120px;
-  right: 0px;
+  right: 16px;
   display: flex;
   align-items: center;
   transform: translateY(40px);
