@@ -1044,3 +1044,99 @@ transition: .42s ease;
   opacity: 1;
 visibility: visible;
 }
+.category-list{
+  margin: 0;
+  padding: 0;
+}
+.category-list li>a{
+color: #1a1a1a;
+font-size: 20px;
+transition: .42s ease;
+line-height: 2;
+display: flex;
+}
+.category-list li>a:hover{
+  color: #d93939;
+}
+.sidebar-area{
+  width: 300px;
+}
+
+#price-output {
+  display: inline-block;
+}
+/*------ pricing filter slider start ------*/
+.price-range-wrap {
+  padding-top: 8px;
+ }
+  .price-range-wrap .price-range {
+    border-radius: 0;
+    margin-right: 13px;
+    margin-bottom: 20px; 
+  }
+    .price-range-wrap .price-range.ui-widget-content {
+      border: none;
+      background: #1a1a1a;
+      height: 10px;
+      border-radius: 20px; }
+      .price-range-wrap .price-range.ui-widget-content .ui-slider-range {
+        background-color: #fff;
+        border-radius: 0; }
+      .price-range-wrap .price-range.ui-widget-content .ui-slider-handle {
+        border: none;
+        background-color: #fff;
+        height: 20px;
+        width: 20px;
+        outline: none;
+        top: -5px;
+        cursor: ew-resize;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); }
+        .price-range-wrap .price-range.ui-widget-content .ui-slider-handle:before {
+          top: 50%;
+          left: 50%;
+          content: "";
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          background-color: #000000;
+          border-radius: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .price-range-wrap .range-slider {
+    color: #333333;
+    margin-top: 22px; }
+    .price-range-wrap .range-slider .price-input {
+      margin-bottom: 20px; }
+      .price-range-wrap .range-slider .price-input label {
+        color: #333333;
+        margin-bottom: 0; }
+      .price-range-wrap .range-slider .price-input input {
+        color: #666666;
+        border: none;
+        outline: none;
+        pointer-events: none; }
+    .price-range-wrap .range-slider button.filter-btn {
+      border: none;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+      line-height: 36px;
+      padding: 0 15px;
+      border-radius: 3px;
+      background-color: #ebebeb; }
+      .price-range-wrap .range-slider button.filter-btn:hover {
+        color: #fff;
+        background-color: #d93939; }
+/*------ pricing filter slider end ------*/ 
+.sidebar-title{
+  font-weight: 600;
+  font-size: 20px;
+}
+#shop-main-area{
+  display: flex;
+}
