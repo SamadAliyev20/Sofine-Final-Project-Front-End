@@ -1194,3 +1194,25 @@ display: flex;
 .page-item:hover .page-link{
   color: #d93939 !important;
 }
+.product-details-area{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.product-details-area .product-modal-carousel{
+  padding: 0 15px;
+}
+.product-details-area .product-details{
+  padding: 0 15px;
+  position: sticky;
+}
+.product-details-area .product-details .product-mini-description {
+padding-bottom: 10px;
+}
+#myTab{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
