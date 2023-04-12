@@ -1481,3 +1481,9 @@ header {
   background-color: #d93939;
   color: #fff;
 }
+.contact-us{
+  padding: 50px 0;
+}
+.contact-textarea{
+  resize: none;
+}
