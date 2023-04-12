@@ -1358,6 +1358,7 @@ header {
   font-size: 15px;
   color: rgb(2, 206, 2);
 }
+
 .login-reg-form-wrap {
   background-color: #fff;
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
@@ -1463,6 +1464,7 @@ header {
   background-color: #d93939;
   color: #fff;
 }
+
 .register-btn {
   border: none;
   color: #333333;
@@ -1481,39 +1483,213 @@ header {
   background-color: #d93939;
   color: #fff;
 }
-.contact-us-1{
+
+.contact-us-1 {
   padding: 50px 0;
 }
-.contact-textarea{
+
+.contact-textarea {
   resize: none;
 }
+
 /* about us area-css */
 .about-content .title {
   font-size: 40px;
   font-weight: 500;
   color: #333;
-  text-transform: uppercase; }
-  @media (max-width: 767px) {
-    .about-content .title {
-      font-size: 24px; } }
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .about-content .title {
+    font-size: 24px;
+  }
+}
+
 .about-content p {
-  margin-top: 25px; }
+  margin-top: 25px;
+}
 
 .about-items .title {
   font-size: 24px;
   font-weight: 500;
   color: #333;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+}
+
 .about-items p {
-  margin-top: 25px; }
-  .about-image img{
-    width: 100%;
-    object-fit: cover;
-  }
-  .about-page{
-    padding: 50px 0;
-  }
-  .about-image{
-    padding-bottom: 20px;
-  }
+  margin-top: 25px;
+}
+
+.about-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-page {
+  padding: 50px 0;
+}
+
+.about-image {
+  padding-bottom: 20px;
+}
+
 /* about us area-css */
+#My-Account-Section{
+  padding: 80px 0;
+}
+.my-account-menu .account-menu-list li a {
+  display: block;
+  width: 100% !important;
+  height: 50px !important;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #e5e5e5;
+  margin-top: -1px;
+  transition: all 0.3s linear;
+}
+
+.my-account-menu .account-menu-list li a i {
+  margin-right: 5px;
+}
+
+.my-account-menu .account-menu-list li a:hover,
+.my-account-menu .account-menu-list li a.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.my-account-tab .account-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.account-wrapper {
+  border: 2px solid #e5e5e5;
+  padding: 40px 30px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .account-wrapper {
+    padding: 30px 20px;
+  }
+}
+
+.account-table .table thead tr th {
+  border: 1px solid #e5e5e5;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  padding: 8px 15px;
+}
+
+.account-table .table thead tr th.name {
+  min-width: 140px;
+}
+
+.account-table .table thead tr th.date {
+  min-width: 130px;
+}
+
+.account-table .table tbody tr td {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+}
+
+.account-table .table tbody tr td a {
+  padding: 0 15px;
+  height: 45px;
+  line-height: 45px;
+  color: #333;
+}
+
+.my-account-dashboard .welcome-dashboard {
+  margin-top: 30px;
+}
+
+.my-account-dashboard .welcome-dashboard p {
+  font-size: 16px;
+  color: #333;
+}
+
+.my-account-dashboard .welcome-dashboard p strong {
+  font-weight: 500;
+}
+
+.my-account-dashboard .welcome-dashboard p a {
+  color: #333;
+  transition: all 0.3s linear;
+}
+
+.my-account-dashboard .welcome-dashboard p a:hover {
+  color: #e52e06;
+}
+
+.my-account-dashboard p {
+  color: #333;
+}
+
+.my-account-payment p {
+  color: #333;
+  font-weight: 500;
+}
+
+.my-account-address .account-address .name {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.my-account-address .account-address p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.my-account-address .account-address .main-btn {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.my-account-details .account-details .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+.single-form input {
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  height: 40px;
+  color: #333;
+  border: 1px solid #e5e5e5;
+  padding: 0 15px;
+  margin-top: 12px;
+}
+.edit-btn{
+  border: none;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 36px;
+  padding: 0 15px;
+  border-radius: 3px;
+  background-color: #ebebeb;
+  transition: .42s ease;
+}
+.edit-btn:hover{
+  background-color: #d93939;
+  color: #fff;
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+    integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/theme.min.css"
+    integrity="sha512-hbs/7O+vqWZS49DulqH1n2lVtu63t3c3MTAn0oYMINS5aT8eIAbJGDXgLt6IxDHcWyzVTgf9XyzZ9iWyVQ7mCQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Slick Slider style -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--=== Bootstrap CSS ===-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--=== Main Style CSS ===-->
+<link href="assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" type="image/png" href="assets/img/favi_32x.png">
+<title>Sofine Shopify Theme– Sofine store</title>
+
+<body>
+    <!-- Start Header Area -->
+    <header>
+        <div class="container p-1">
+            <div class="row mt-3">
+                <div class="col-4 col-md-2 col-lg-1 logo">
+                    <a href="index.html"><img src="assets/img/Logo/logo.png" alt=""></a>
+                </div>
+                <div class="col-8 col-md-11">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <div class="menu-toggle d-md-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="navlist d-none d-md-block ">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <div class="nav-items d-flex">
+                                    <li><a href="#" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                    </li>
+                                    <li><a href="#" class="minicart-btn"><i
+                                                class="fa-solid fa-basket-shopping"></i><span class="count">0</span></a>
+                                    </li>
+                                    <li><a href="#" class="miniwishlist-btn"><i class="fa-regular fa-heart"></i><span
+                                                class="wish-count">0</span></a></li>
+                                    <li><a href="#" class="login-register"><i class="fa-regular fa-user"></i></a></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Start Mobile Header Area -->
+    <section id="Mobile-Header-Section">
+        <div class="container-mobile">
+            <div class="mobile-header">
+                <div class="hamburger-menu">
+                    <button class="hamburger-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="mobile-logo">
+                    <a href="index.html"><img src="assets/img/Logo/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="mobile-basket">
+                    <a href="#" class="minicart-btn"><i class="fa-solid fa-basket-shopping"></i><span
+                            class="count">0</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hamburger-menu-section">
+        <div class="mobile-menu-content-box">
+            <div class="mobile-close-btn">
+                CLOSE
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="mobile-search-box">
+                <h4>WHAT ARE YOU LOOKING FOR?</h4>
+                <a href="#" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <ul class="mobile-btns">
+                <li>
+                    <a href="#">
+                        Login/Register
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        SHOP
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        WISHLIST(0)
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        CONTACT US
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mask-overlay mask_opened">
+        </div>
+    </section>
+    <!-- End Mobile Header Area -->
+    <!-- End Header Area -->
+    <!-- Start Main Area -->
+    <main>
+     <!-- Start My-Account Section-->
+     <section id="My-Account-Section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-4">
+                    <div class="my-account-menu mt-30">
+                        <ul class="nav account-menu-list flex-column nav-pills" id="pills-tab" role="tablist">
+                            <li>
+                              <a class="active" id="pills-dashboard-tab"data-bs-toggle="pill" href="#pills-dashboard" role="tab" aria-controls="pills-dashboard" aria-selected="true"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
+                            </li>
+                            <li>
+                              <a id="pills-order-tab" data-bs-toggle="pill" href="#pills-order" role="tab" aria-controls="pills-order" aria-selected="false"><i class="fa-solid fa-cart-shopping"></i> Order</a>
+                            </li>
+                            <li>
+                              <a id="pills-address-tab" data-bs-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="false"><i class="fa-regular fa-map"></i> Address</a>
+                            </li>
+                            <li>
+                              <a id="pills-account-tab" data-bs-toggle="pill" href="#pills-account" role="tab" aria-controls="pills-account" aria-selected="false"><i class="far fa-user"></i> Account Details</a>
+                            </li>
+                            <li>
+                                <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-8">
+                    <div class="tab-content my-account-tab mt-30" id="pills-tabContent">
+                        <div class="tab-pane fade active show" id="pills-dashboard" role="tabpanel" aria-labelledby="pills-dashboard-tab">
+                            <div class="my-account-dashboard account-wrapper">
+                                <h4 class="account-title">Dashboard</h4>
+                                <div class="welcome-dashboard">
+                                    <p>Hello, <strong>Samad Aliyev</strong> (If Not <strong>Samad Aliyev !</strong> <a href="#">Logout</a> )</p>
+                                </div>
+                                <p class="mt-25">From your account dashboard. you can easily check & view your recent orders, manage your shipping and billing addresses and edit your password and account details.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">
+                            <div class="my-account-address account-wrapper">
+                                <h4 class="account-title">Payment Method</h4>
+                                <div class="account-address mt-30">
+                                    <h6 class="name">Samad Aliyev</h6>
+                                    <p>Hasan Bay<br> Zardabi 89a</p>
+                                    <p>Mobile: +(994)50 760 06 49</p>
+                                    <a class="edit-btn" href="#"><i class="far fa-edit"></i> Edit Address</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab">
+                            <div class="my-account-order account-wrapper">
+                                <h4 class="account-title">Orders</h4>
+                                <div class="account-table text-center mt-30 table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="no">No</th>
+                                                <th class="name">Name</th>
+                                                <th class="date">Date</th>
+                                                <th class="status">Status</th>
+                                                <th class="total">Total</th>
+                                                <th class="action">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Mostarizing Oil</td>
+                                                <td>Aug 22, 2020</td>
+                                                <td>Pending</td>
+                                                <td>$100</td>
+                                                <td><a href="#">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Katopeno Altuni</td>
+                                                <td>July 22, 2020</td>
+                                                <td>Approved</td>
+                                                <td>$45</td>
+                                                <td><a href="#">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Murikhete Paris</td>
+                                                <td>June 22, 2020</td>
+                                                <td>On Hold</td>
+                                                <td>$99</td>
+                                                <td><a href="#">View</a></td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab">
+                            <div class="my-account-details account-wrapper">
+                                <h4 class="account-title">Account Details</h4>
+                                <div class="account-details">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="single-form">
+                                                <input type="text" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form">
+                                                <input type="text" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-form">
+                                                <input type="text" placeholder="Display Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-form">
+                                                <input type="text" placeholder="Email address">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-form">
+                                                <h5 class="title">Password change</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-form">
+                                                <input type="password" placeholder="Current Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form">
+                                                <input type="password" placeholder="New Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form">
+                                                <input type="password" placeholder="Confirm Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form">
+                                                <button class="edit-btn mt-2">Save Change</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- End My-Account Section-->
+        <!-- Start  Mobile-Desktop-Cart Section-->
+        <section id="Mini-Cart-Box-Section">
+            <div class="mini-cart-box">
+                <div class="mini-cart-header">
+                    <div class="mini-cart-title">
+                        Shopping Cart
+                    </div>
+                    <div class="cart-close-btn">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+                <div class="mini-cart-inner">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Your Cart Is Empty.</p>
+                    <a href="/">Return TO Shop</a>
+                </div>
+            </div>
+        </section>
+        <!-- Start  Mobile-Desktop-Cart Section-->
+        <!-- Start  Mobile-Desktop-Wishlist Section-->
+        <section id="Wishlist-Box-Section">
+            <div class="wishlist-box">
+                <div class="wishlist-header">
+                    <div class="wishlist-title">
+                        Wishlist
+                    </div>
+                    <div class="wislist-close-btn">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+                <div class="wishlist-inner">
+                    <i class="fa-solid fa-heart-circle-xmark"></i>
+                    <p>Your Wishlist is empty.</p>
+                </div>
+            </div>
+        </section>
+        <!-- End  Mobile-Desktop-Wishlist Section-->
+        <!-- Start  Mobile-Desktop-Search Section-->
+        <section id="Search-Section">
+            <div class="search-content-box">
+                <div class="search-close-btn">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="search-inner">
+                    <h4 class="fw-bolder">WHAT ARE YOU LOOKING FOR?</h4>
+                    <input class="search-main-box" type="text" placeholder="Search...">
+                </div>
+            </div>
+
+
+        </section>
+        <!-- End  Mobile-Desktop-Search Section-->
+    </main>
+    <!-- End Main Area -->
+    <!-- Start Footer Area -->
+  <footer id="Main-Footer-Section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="logo-footer">
+            <a href="#">
+              <img src="assets/img/Logo/logo.png" alt="">
+            </a>
+          </div>
+          <div class="information">
+            <h4 class="fw-bold mt-2">Let's Talk</h4>
+            <p>+994 50 760 06 49</p>
+            <p>aliyevsamed07@gmail.com</p>
+          </div>
+          <div class="contact-us">
+            <h4 class="fw bold mt-2">Contact Us</h4>
+            <p>1418 Riverwood Drive, Suite 3245 Cottonwood
+              CA 96052, United States</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <span class="footer-title fw-bold fs-5">
+            Get Help
+          </span>
+          <ul class="footer-items">
+            <li class="footer-item">
+              <a href="#">
+                About Us
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#">
+                Track order
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#">
+                Delivery Information
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#">
+                Sale Terms & Conditions
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#">
+                Returns & Refunds
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#">
+                Privacy Notice
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#">
+                Shopping FAQs
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="footer-title fw-bold fs-5">
+            <h4>Let’s stay in touch</h4>
+          </div>
+          <div class="subscribe-area position-relative">
+            <input type="email" placeholder="Enter Your Email...">
+            <a class="sub-btn" href="">Subscribe</a>
+            <p>Keep up to date with our latest news and special offers.</p>
+          </div>
+          <div class="follow-us-area">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Area -->
+    <!--=======================Javascript============================-->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js"
+        integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Slick Slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/vanilla.js"></script>
+    <!--=======================Javascript============================-->
+</body>
+
+</html>
