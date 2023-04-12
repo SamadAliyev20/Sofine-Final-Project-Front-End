@@ -35,7 +35,7 @@
 
 <body>
     <!-- Start Header Area -->
-    <header>
+    <header id="main-header">
         <div class="container p-1">
             <div class="row mt-3">
                 <div class="col-4 col-md-2 col-lg-1 logo">
@@ -186,6 +186,12 @@
                         <div class="modal-line">
                           <hr>
                         </div>
+                        <div class="product-stock">
+                          <span class="fw-bold mx-2">Stock:</span><span class="stock-check">In Stock</span>
+                        </div>
+                        <div class="modal-line">
+                          <hr>
+                        </div>
                         <div id="add-to-wishlist">
                           <i class="fa-regular fa-heart"></i>
                           <a href="#">ADD TO WISHLIST</a>
@@ -217,7 +223,7 @@
         </section>
         <!-- End  Product-Details Section-->
          <!-- Start  Product-Tab-menu Section-->
-         <section>
+         <section id="Product-Tab-Menu-Section">
             <div class="container">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -252,7 +258,7 @@
                     </div>
                     <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
                         <form action="#" class="review-form">
-                            <h5>1 review for <span>Chaz Kangeroo Hoodies</span></h5>
+                            <h5>1 review for <span>Samad Aliyev</span></h5>
                             <div class="total-reviews">
                                 <div class="rev-avatar">
                                     <img src="assets/img/about/avatar.jpg" alt="">
@@ -263,10 +269,10 @@
                                         <span class="good"><i class="fa fa-star"></i></span>
                                         <span class="good"><i class="fa fa-star"></i></span>
                                         <span class="good"><i class="fa fa-star"></i></span>
-                                        <span><i class="fa fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
                                     </div>
                                     <div class="post-author">
-                                        <p><span>admin -</span> 30 Nov, 2018</p>
+                                        <p><span>Samad -</span> 12 April, 2023</p>
                                     </div>
                                     <p>Aliquam fringilla euismod risus ac bibendum. Sed sit amet sem varius ante feugiat lacinia. Nunc ipsum nulla, vulputate ut venenatis vitae, malesuada ut mi. Quisque iaculis, dui congue placerat pretium, augue erat accumsan lacus</p>
                                 </div>
@@ -287,27 +293,26 @@
                                 <div class="col">
                                     <label class="col-form-label"><span class="text-danger">*</span> Your Review</label>
                                     <textarea class="form-control" required></textarea>
-                                    <div class="help-block pt-10"><span class="text-danger">Note:</span> HTML is not translated!</div>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col">
-                                    <label class="col-form-label"><span class="text-danger">*</span> Rating</label>
-                                    
-                                    <input type="radio" value="1" name="rating">
-                                   
-                                    <input type="radio" value="2" name="rating">
-                                    
-                                    <input type="radio" value="3" name="rating">
-                                    
-                                    <input type="radio" value="4" name="rating">
-                                    
-                                    <input type="radio" value="5" name="rating" checked>
-                                    
+                                    <div class="rate">
+                                      <input type="radio" id="star5" name="rate" value="5" />
+                                      <label for="star5" title="5">5 stars</label>
+                                      <input type="radio" id="star4" name="rate" value="4" />
+                                      <label for="star4" title="4">4 stars</label>
+                                      <input type="radio" id="star3" name="rate" value="3" />
+                                      <label for="star3" title="3">3 stars</label>
+                                      <input type="radio" id="star2" name="rate" value="2" />
+                                      <label for="star2" title="2">2 stars</label>
+                                      <input type="radio" id="star1" name="rate" value="1" />
+                                      <label for="star1" title="1">1 star</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="buttons">
-                                <button class="sqr-btn" type="submit">Continue</button>
+                                <button class="sqr-btn" type="submit">Add Review</button>
                             </div>
                         </form> <!-- end of review-form -->
                     </div>

@@ -1206,7 +1206,6 @@ display: flex;
 }
 .product-details-area .product-details{
   padding: 0 15px;
-  position: sticky;
 }
 .product-details-area .product-details .product-mini-description {
 padding-bottom: 10px;
@@ -1215,4 +1214,66 @@ padding-bottom: 10px;
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
+}
+.sqr-btn{
+      border: none;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+      line-height: 36px;
+      padding: 0 15px;
+      border-radius: 3px;
+      background-color: #ebebeb;
+      transition: .42s ease;
+}
+#review .buttons{
+  padding-bottom: 20px;
+}
+.sqr-btn:hover{
+  background-color: #d93939;
+  color: #fff;
+}
+.rate {
+  float: left;
+  height: 46px;
+  
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+.good{
+  color: #c59b08;
+}
+.stock-check{
+  font-size: 15px;
+  color: rgb(2, 206, 2);
 }
