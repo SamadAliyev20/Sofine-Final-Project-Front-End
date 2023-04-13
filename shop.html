@@ -287,7 +287,7 @@
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                       </div>
                       <div class="group-button">
-                        <a href="#" class="open-modal" data-target="#product_view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-quick-view"><i class="fa-regular fa-eye"></i></a>
                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                       </div>
                     </div>
@@ -323,7 +323,7 @@
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                       </div>
                       <div class="group-button">
-                        <a href="#" class="open-modal" data-target="#product_view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-quick-view"><i class="fa-regular fa-eye"></i></a>
                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                       </div>
                     </div>
@@ -359,7 +359,7 @@
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                       </div>
                       <div class="group-button">
-                        <a href="#" class="open-modal" data-target="#product_view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-quick-view"><i class="fa-regular fa-eye"></i></a>
                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                       </div>
                     </div>
@@ -395,7 +395,7 @@
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                       </div>
                       <div class="group-button">
-                        <a href="#" class="open-modal" data-target="#product_view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-quick-view"><i class="fa-regular fa-eye"></i></a>
                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                       </div>
                     </div>
@@ -431,7 +431,7 @@
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                       </div>
                       <div class="group-button">
-                        <a href="#" class="open-modal" data-target="#product_view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-quick-view"><i class="fa-regular fa-eye"></i></a>
                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                       </div>
                     </div>
@@ -467,7 +467,7 @@
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                       </div>
                       <div class="group-button">
-                        <a href="#" class="open-modal" data-target="#product_view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-quick-view"><i class="fa-regular fa-eye"></i></a>
                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                       </div>
                     </div>
@@ -503,7 +503,7 @@
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                       </div>
                       <div class="group-button">
-                        <a href="#" class="open-modal" data-target="#product_view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-quick-view"><i class="fa-regular fa-eye"></i></a>
                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                       </div>
                     </div>
@@ -539,7 +539,7 @@
                         <a href="#"><i class="fa-regular fa-heart"></i></a>
                       </div>
                       <div class="group-button">
-                        <a href="#" class="open-modal" data-target="#product_view"><i class="fa-regular fa-eye"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#product-quick-view"><i class="fa-regular fa-eye"></i></a>
                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                       </div>
                     </div>
@@ -622,81 +622,81 @@
 
     </section>
     <!-- End  Mobile-Desktop-Search Section-->
-    <!-- Start Product Modal Section-->
-    <section>
-      <!-- Modal -->
-      <div class="pr-modal" id="product_view">
-        <div class="product-content-box">
-          <div class="row pr-modal-items">
-            <div class="product-modal-carousel col-xs-12 col-sm-12  col-md-6 col-lg-6">
-              <div class="pr-img"><img src="assets/img/Product/product-1.jpg"></div>
-              <div class="pr-img"><img src="assets/img/Product/product-1-hover.jpg"></div>
-              <div class="pr-img"><img src="assets/img/Product/product-2.jpg"></div>
-              <div class="pr-img"><img src="assets/img/Product/product-2-hover.jpg"></div>
-            </div>
-            <div class="product-details col-xs-12 col-sm-12  col-md-6 col-lg-6">
-              <div class="product-name">
-                <h2><a href="">Proenza Schouler White Label</a></h2>
-              </div>
-              <div class="product-reviews">
-                <span class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                </span>
-                <span class="total-reviews">
-                  No Reviews
-                </span>
-                <a href="#" class="write-review">Write a Review</a>
-              </div>
-              <div class="modal-line">
-                <hr>
-              </div>
-              <div class="price-box">
-                <span class="price-regular">$150.00</span>
-                <span class="price-old">$230.00</span>
-              </div>
-              <div class="modal-line">
-                <hr>
-              </div>
-              <div class="product-add-qty">
-                <div class="product-qty">
-                  <input type="number" value="1" min="0" max="10">
+   <!-- Start Product Modal Section-->
+   <section>
+    <div class="modal fade" id="product-quick-view" tabindex="-1" aria-labelledby="product-quickview" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+              <div class="row pr-modal-items">
+                  <div class="product-modal-carousel col-xs-12 col-sm-12  col-md-6 col-lg-6">
+                    <div class="pr-img"><img src="assets/img/Product/product-1.jpg"></div>
+                    <div class="pr-img"><img src="assets/img/Product/product-1-hover.jpg"></div>
+                    <div class="pr-img"><img src="assets/img/Product/product-2.jpg"></div>
+                    <div class="pr-img"><img src="assets/img/Product/product-2-hover.jpg"></div>
+                  </div>
+                  <div class="product-details col-xs-12 col-sm-12  col-md-6 col-lg-6">
+                    <div class="product-name">
+                      <h2><a href="">Proenza Schouler White Label</a></h2>
+                    </div>
+                    <div class="product-reviews">
+                      <span class="stars">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      </span>
+                      <span class="total-reviews">
+                        No Reviews
+                      </span>
+                      <a href="#" class="write-review">Write a Review</a>
+                    </div>
+                    <div class="modal-line">
+                      <hr>
+                    </div>
+                    <div class="price-box">
+                      <span class="price-regular">$150.00</span>
+                      <span class="price-old">$230.00</span>
+                    </div>
+                    <div class="modal-line">
+                      <hr>
+                    </div>
+                    <div class="product-add-qty">
+                      <div class="product-qty">
+                        <input type="number" value="1" min="0" max="10">
+                      </div>
+                      <div class="product-add-to-cart-btn">
+                        <a href="#">Add To Cart</a>
+                      </div>
+                    </div>
+                    <div class="modal-line">
+                      <hr>
+                    </div>
+                    <div id="add-to-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                      <a href="#">ADD TO WISHLIST</a>
+                    </div>
+                    <div class="modal-line">
+                      <hr>
+                    </div>
+                    <div class="follow-us-area">
+                      <h5>Share:</h5>
+                      <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="product-add-to-cart-btn">
-                  <a href="#">Add To Cart</a>
-                </div>
-              </div>
-              <div class="modal-line">
-                <hr>
-              </div>
-              <div id="add-to-wishlist">
-                <i class="fa-regular fa-heart"></i>
-                <a href="#">ADD TO WISHLIST</a>
-              </div>
-              <div class="modal-line">
-                <hr>
-              </div>
-              <div class="follow-us-area">
-                <h5>Share:</h5>
-                <div class="social-icons">
-                  <i class="fa-brands fa-facebook-f"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-whatsapp"></i>
-                  <i class="fa-brands fa-telegram"></i>
-                </div>
-              </div>
-            </div>
-            <div class="button-close-modal">
-              <i class="fa-solid fa-x"></i>
-            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Product Modal Section-->
+    </div>
+      </section>
+      <!-- End Product Modal Section-->
   </main>
   <!-- End Main Area -->
    <!-- Start Footer Area -->

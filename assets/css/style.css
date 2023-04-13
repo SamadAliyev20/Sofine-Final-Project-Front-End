@@ -906,7 +906,7 @@ header {
   margin: 10px;
 }
 
-.product-content-box {
+.modal-content {
   position: fixed;
   padding: 20px 25px 20px 20px;
   top: 50%;
