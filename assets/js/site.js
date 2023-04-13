@@ -196,7 +196,7 @@ $(document).ready(function () {
     arrows: false,
     swipe: true,
     fade: true,
-    dots:true,
+    dots: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -307,9 +307,20 @@ $(document).ready(function () {
   });
   amount.val(" $" + rangeSlider.slider("values", 0) +
     " - $" + rangeSlider.slider("values", 1));
-    // pricing filter
-    // nice select
-    $('select').niceSelect();
-    // nice-select
-    
+  // pricing filter
+  // nice select
+  $('select').niceSelect();
+  // nice-select
+  // product quantity
+  $('.add').click(function () {
+    if ($(this).prev().val()) {
+      $(this).prev().val(+$(this).prev().val() + 1);
+    }
+  });
+  $('.sub').click(function () {
+    if ($(this).next().val() > 1) {
+      if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    }
+  });
+
 });

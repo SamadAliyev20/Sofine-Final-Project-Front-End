@@ -1693,3 +1693,80 @@ header {
   background-color: #d93939;
   color: #fff;
 }
+#Cart-Section{
+  padding: 50px 0;
+}
+.pro-img{
+  width: 120px;
+}
+.cart-area td {
+padding:15px;
+text-align: center;
+vertical-align: middle;
+}
+.pro-name{
+font-weight: bold;
+font-size: 18px;
+}
+.pro-qty input{
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: inherit;
+  font-weight: 600;
+  background: 0 0;
+  color: #1a1a1a;
+  justify-content: center;
+  display: inline-flex;
+}
+.pro-qty button{
+  border: none;
+  background-color: #fff;
+}
+.pro-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+.pro-remove a{
+  color: #d93939;
+  font-size: 20px;
+}
+.cart-total{
+  padding: 30px;
+    background-color: #fff;
+    border: 1px solid #E6ECF0;
+    
+}
+.info-checkout{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+    color: #1a1a1a;
+    align-items: center;
+    padding-top: 15px;
+}
+.btn-checkout{
+  display: inline-block;
+    align-items: center;
+    padding: 0 30px;
+    background: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    color: #fff;
+    margin: 0;
+    border-radius: 3px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: .42s ease;
+}
+.btn-checkout:hover{
+  background-color: #d93939;
+  color: #fff;
+}
