@@ -1770,3 +1770,10 @@ font-size: 18px;
   background-color: #d93939;
   color: #fff;
 }
+.pro-add-to-cart a{
+  font-size: 20px;
+  color: #cb1919;
+}
+#Wishlist-Section{
+padding: 150px 0;
+}
