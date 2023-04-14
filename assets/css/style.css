@@ -464,14 +464,6 @@ header {
   color: black;
 
 }
-
-.category-text .category-count {
-  position: absolute;
-  top: -15px;
-  left: 145px;
-  cursor: pointer;
-}
-
 .category-text a {
   color: #1a1a1a;
 }
