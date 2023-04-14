@@ -56,10 +56,10 @@ header {
   position: relative;
 }
 
-.navlist a {
+.navlist  a {
   color: black;
   padding: 10px 15px;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   transition: .42s ease;
 }
@@ -1776,4 +1776,45 @@ font-size: 18px;
 }
 #Wishlist-Section{
 padding: 150px 0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.breadcrumb-wrap nav .breadcrumb {
+  background: transparent;
+  margin-bottom: 0;
+  padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#BreadCrumb-Section{
+  padding: 20px 0;
+}
+.breadcrumb-title{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.breadcrumb-item a{
+  color: #cb1919;
 }
