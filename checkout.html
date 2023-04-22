@@ -151,10 +151,10 @@
           <div class="col-12">
               <div class="breadcrumb-wrap text-center">
                   <nav aria-label="breadcrumb">
-                      <h1 class="breadcrumb-title">Cart</h1>
+                      <h1 class="breadcrumb-title">Checkout</h1>
                       <ul class="breadcrumb">
                           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                          <li class="breadcrumb-item active" aria-current="page">Checkout</li>
                       </ul>
                   </nav>
               </div>
@@ -165,72 +165,102 @@
     <!-- End BreadCrumb Area -->
     <!-- Start Main Area -->
     <main>
-        <!-- Start Cart Section-->
-        <section id="Cart-Section">
+        <!-- Start Checkout Section-->
+        <section id="Checkout-Section">
             <div class="container">
                 <div class="row">
-                    <div class="cart-area">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr class="title text-center">
-                                            <th>THUMBNAIL</th>
-                                            <th>Product</th>
-                                            <th>Price</th>
-                                            <th>Quantity</th>
-                                            <th>Total</th>
-                                            <th>Delete</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="pro-img"><a href="product-details.html">
-                                                    <img class="img-fluid" src="assets/img/Product/product-1.jpg">
-                                                </a></td>
-                                            <td class="pro-name">Proenza Schouler White Label</td>
-                                            <td class="pro-price"><span>$65.00</span></td>
-                                            <td class="pro-qty">
-                                                <button type="button" class="sub"><i
-                                                        class="fa-solid fa-minus"></i></button>
-                                                <input type="text" value="1" />
-                                                <button type="button" class="add"><i
-                                                        class="fa-solid fa-plus"></i></button>
-                                            </td>
-                                            <td class="pro-total"><span>$65.00</span></td>
-                                            <td class="pro-remove"><a href=""><i
-                                                        class="fa-regular fa-trash-can"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                   <div class="col-lg-6">
+                    <div class="checkout-billing-details">
+                        <div class="checkout-title">
+                            Billing Details
                         </div>
-                        <div class="col-lg-4 col-xs-12 col-sm-12 col-md-12 cart-all">
-                        <div class="cart-total">
-                         <h5 class="cart-title">Cart Totals</h5>
-                         <div class="modal-line">
-                            <hr>
-                          </div>
-                          <div class="info-checkout">
-                            <span>Subtotal:</span>
-                            <span class="sub-total">$65.00</span>
-                          </div>
-                          <div class="modal-line">
-                            <hr>
-                          </div>
-                          <div class="info-checkout">
-                            <span>Total:</span>
-                            <span class="pro-total">$65.00</span>
-                          </div>
-                          <div class="modal-line">
-                            <hr>
-                          </div>
-                          <div class="pro-checkout">
-                            <button class="btn-checkout">Checkout</button>
-                          </div>
+                        <div class="billing-form">
+                            <form method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-input-item">
+                                            <label for="Name">Name</label>
+                                            <input type="text" class="input-box" placeholder="Name"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-input-item">
+                                            <label for="Last Name">Last Name</label>
+                                            <input type="text" class="input-box" placeholder="Last Name"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-input-item">
+                                            <label for="Email">Email</label>
+                                            <input type="email" class="input-box" placeholder="Email"/>
+                                        </div>
+                                        <div class="single-input-item">
+                                            <label for="Phone">Phone</label>
+                                            <input type="text" class="input-box" placeholder="Phone"/>
+                                        </div>
+                                        <div class="single-input-item">
+                                            <label for="Name">City</label>
+                                            <input type="text" class="input-box" placeholder="City"/>
+                                        </div>
+                                        <div class="single-input-item">
+                                            <label for="AddressLine">AddressLine</label>
+                                            <input type="text" class="input-box" placeholder="AddressLine"/>
+                                        </div>
+                                        <div class="single-input-item">
+                                            <label for="State">State</label>
+                                            <input type="text" class="input-box" placeholder="State"/>
+                                        </div>
+                                        <div class="single-input-item">
+                                            <label for="Postal Code">Postal Code</label>
+                                            <input type="text" class="input-box" placeholder="Postal Code"/>
+                                        </div>
+
+                            </form>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-lg-6">
+                    <div class="order-summary-details">
+                        <div class="checkout-title">
+                            Your Order
+                        </div>
+                        <div class="order-content">
+                        <div class="order-summary-table table-responsive text-center">
+                         <table class="table table-bordered">
+                         <thead>
+                            <tr>
+                            <th>Products</th>
+                            <th>Total</th>
+                            </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                                <td class="check-name"><a>Proenza Schouler White Label</a> <strong>x 1</strong></td>
+                                <td class="check-name"><span>$65.00</span></td>
+                            </tr>
+                            <tr>
+                                <td class="check-name"><a>Proenza Schouler White Label</a> <strong>x 1</strong></td>
+                                <td class="check-name"><span>$65.00</span></td>
+                            </tr>
+                            <tr>
+                                <td class="check-name"><a>Proenza Schouler White Label</a> <strong>x 1</strong></td>
+                                <td class="check-name"><span>$65.00</span></td>
+                            </tr>
+                         </tbody>
+                         <tfoot>
+                            <td>Total Price</td>
+                            <td class="checkout-total"><span>$65.00</span></td>
+                         </tfoot>
+                         </table>
+                         <div class="order-btn-area">
+                         <button class="btn-order">
+                          Place Order
+                         </button>
+                         </div>
                         </div>
                         </div>
                     </div>
+                   </div>
                 </div>
             </div>
         </section>
